@@ -1,0 +1,32 @@
+PODS:
+  - Expecta (1.0.3)
+  - Expecta+Snapshots (2.0.0):
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase/Core (~> 2.0.3)
+  - FBSnapshotTestCase (2.0.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.4)
+  - FBSnapshotTestCase/Core (2.0.4)
+  - FBSnapshotTestCase/SwiftSupport (2.0.4):
+    - FBSnapshotTestCase/Core
+  - JTToast (0.1.0)
+  - Specta (1.0.4)
+
+DEPENDENCIES:
+  - Expecta
+  - Expecta+Snapshots
+  - FBSnapshotTestCase
+  - JTToast (from `../`)
+  - Specta
+
+EXTERNAL SOURCES:
+  JTToast:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: 9d1bff6c8b0eeee73a166a2ee898892478927a15
+  Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
+  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
+  JTToast: a815aa2cf6c41b2f85aac89881fcf7c14ba076e6
+  Specta: 69bb134672aae190a1379ff91df07dad8dd1f869
+
+COCOAPODS: 0.38.2
