@@ -1,5 +1,4 @@
 #import "JTToast.h"
-#import "JTToastConfiguration.h"
 #import "JTToastView.h"
 
 @interface JTToast ()
@@ -12,11 +11,16 @@
 
 @implementation JTToast
 
-+(JTToast*)makeText:(NSString *)text
++(JTToast*)toastWithText:(NSString *)text
+{
+    return [JTToast toastWithText:text configuration:[JTToastConfiguration defaultConfiguration]];
+}
+
++(JTToast*)toastWithText:(NSString *)text configuration:(JTToastConfiguration *)config
 {
     JTToast* toast=[[JTToast alloc] init];
-    toast.config=[JTToastConfiguration defaultConfiguration];
     toast.text=text;
+    toast.config=config;
     return toast;
 }
 
