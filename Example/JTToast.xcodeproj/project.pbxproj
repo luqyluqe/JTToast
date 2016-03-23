@@ -22,6 +22,13 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A4D735E3FD2BD3E2579529EA /* Pods_JTToast_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8FCE8EF032851ADB51D31D /* Pods_JTToast_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A94596521CA19FC600BF279A /* JTToast.m in Sources */ = {isa = PBXBuildFile; fileRef = A94596411CA19FC600BF279A /* JTToast.m */; };
+		A94596531CA19FC600BF279A /* JTToastConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A94596431CA19FC600BF279A /* JTToastConfiguration.m */; };
+		A94596541CA19FC600BF279A /* JTToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = A94596451CA19FC600BF279A /* JTToastView.m */; };
+		A94596551CA19FC600BF279A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A94596481CA19FC600BF279A /* Info.plist */; };
+		A94596561CA19FC600BF279A /* JTToast.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A945964A1CA19FC600BF279A /* JTToast.xcconfig */; };
+		A94596571CA19FC600BF279A /* JTToast-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A945964B1CA19FC600BF279A /* JTToast-Private.xcconfig */; };
+		A94596581CA19FC600BF279A /* JTToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A945964C1CA19FC600BF279A /* JTToast-dummy.m */; };
 		F86CF0A8674D615023EC5B50 /* Pods_JTToast_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3CE9C8727E1D91B4A7A666 /* Pods_JTToast_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -61,6 +68,19 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		986CA8AB581FA2C20D04A968 /* JTToast.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JTToast.podspec; path = ../JTToast.podspec; sourceTree = "<group>"; };
 		9D8FCE8EF032851ADB51D31D /* Pods_JTToast_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTToast_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94596401CA19FC600BF279A /* JTToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTToast.h; sourceTree = "<group>"; };
+		A94596411CA19FC600BF279A /* JTToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTToast.m; sourceTree = "<group>"; };
+		A94596421CA19FC600BF279A /* JTToastConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTToastConfiguration.h; sourceTree = "<group>"; };
+		A94596431CA19FC600BF279A /* JTToastConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTToastConfiguration.m; sourceTree = "<group>"; };
+		A94596441CA19FC600BF279A /* JTToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTToastView.h; sourceTree = "<group>"; };
+		A94596451CA19FC600BF279A /* JTToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTToastView.m; sourceTree = "<group>"; };
+		A94596481CA19FC600BF279A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94596491CA19FC600BF279A /* JTToast.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = JTToast.modulemap; sourceTree = "<group>"; };
+		A945964A1CA19FC600BF279A /* JTToast.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = JTToast.xcconfig; sourceTree = "<group>"; };
+		A945964B1CA19FC600BF279A /* JTToast-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "JTToast-Private.xcconfig"; sourceTree = "<group>"; };
+		A945964C1CA19FC600BF279A /* JTToast-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JTToast-dummy.m"; sourceTree = "<group>"; };
+		A945964D1CA19FC600BF279A /* JTToast-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JTToast-prefix.pch"; sourceTree = "<group>"; };
+		A945964E1CA19FC600BF279A /* JTToast-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JTToast-umbrella.h"; sourceTree = "<group>"; };
 		C8D363FD188075833009C8A8 /* Pods-JTToast_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTToast_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JTToast_Example/Pods-JTToast_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DB667D09B16D031298E0316D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DD3CE9C8727E1D91B4A7A666 /* Pods_JTToast_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTToast_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +116,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				A94596511CA19FC600BF279A /* Development Pods */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for JTToast */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -180,6 +201,61 @@
 				DB667D09B16D031298E0316D /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A94596461CA19FC600BF279A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A94596401CA19FC600BF279A /* JTToast.h */,
+				A94596411CA19FC600BF279A /* JTToast.m */,
+				A94596421CA19FC600BF279A /* JTToastConfiguration.h */,
+				A94596431CA19FC600BF279A /* JTToastConfiguration.m */,
+				A94596441CA19FC600BF279A /* JTToastView.h */,
+				A94596451CA19FC600BF279A /* JTToastView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A94596471CA19FC600BF279A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A94596461CA19FC600BF279A /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		A945964F1CA19FC600BF279A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94596481CA19FC600BF279A /* Info.plist */,
+				A94596491CA19FC600BF279A /* JTToast.modulemap */,
+				A945964A1CA19FC600BF279A /* JTToast.xcconfig */,
+				A945964B1CA19FC600BF279A /* JTToast-Private.xcconfig */,
+				A945964C1CA19FC600BF279A /* JTToast-dummy.m */,
+				A945964D1CA19FC600BF279A /* JTToast-prefix.pch */,
+				A945964E1CA19FC600BF279A /* JTToast-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JTToast";
+			sourceTree = "<group>";
+		};
+		A94596501CA19FC600BF279A /* JTToast */ = {
+			isa = PBXGroup;
+			children = (
+				A94596471CA19FC600BF279A /* Pod */,
+				A945964F1CA19FC600BF279A /* Support Files */,
+			);
+			name = JTToast;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A94596511CA19FC600BF279A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A94596501CA19FC600BF279A /* JTToast */,
+			);
+			name = "Development Pods";
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		D46AAAB250E23E3985685154 /* Pods */ = {
@@ -276,8 +352,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94596551CA19FC600BF279A /* Info.plist in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				A94596561CA19FC600BF279A /* JTToast.xcconfig in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				A94596571CA19FC600BF279A /* JTToast-Private.xcconfig in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +469,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94596531CA19FC600BF279A /* JTToastConfiguration.m in Sources */,
 				6003F59E195388D20070C39A /* JTAppDelegate.m in Sources */,
+				A94596541CA19FC600BF279A /* JTToastView.m in Sources */,
+				A94596581CA19FC600BF279A /* JTToast-dummy.m in Sources */,
+				A94596521CA19FC600BF279A /* JTToast.m in Sources */,
 				6003F5A7195388D20070C39A /* JTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -516,6 +599,7 @@
 				GCC_PREFIX_HEADER = "JTToast/JTToast-Prefix.pch";
 				INFOPLIST_FILE = "JTToast/JTToast-Info.plist";
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -531,6 +615,7 @@
 				GCC_PREFIX_HEADER = "JTToast/JTToast-Prefix.pch";
 				INFOPLIST_FILE = "JTToast/JTToast-Info.plist";
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,6 +7,7 @@
 //
 
 #import "JTViewController.h"
+#import "JTToast.h"
 
 @interface JTViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor=[UIColor whiteColor];
+    [[JTToast toastWithText:@"hahahahahahahahaha"] showInView:self.view];
 }
 
 - (void)didReceiveMemoryWarning

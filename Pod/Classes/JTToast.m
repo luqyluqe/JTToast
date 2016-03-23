@@ -24,14 +24,21 @@
     return toast;
 }
 
+-(void)showInView:(UIView *)containerView
+{
+    CGRect boundingRect=[self.text boundingRectWithSize:CGSizeMake(self.config.widthLimit, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.config.font} context:nil];
+    [self showInView:containerView size:CGSizeMake(boundingRect.size.width+2*self.config.paddingHorizontal, boundingRect.size.height+2*self.config.paddingVertical)];
+}
+
 -(void)showInView:(UIView *)containerView size:(CGSize)size
 {
     self.view=[[JTToastView alloc] initWithFrame:CGRectMake(0, 0, size.width,size.height)];
-    UILabel* label=[[UILabel alloc] initWithFrame:self.view.frame];
+    UILabel* label=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, size.width-2*self.config.paddingHorizontal,size.height-2*self.config.paddingVertical)];
     label.numberOfLines=0;
     label.textAlignment=NSTextAlignmentCenter;
     label.center=self.view.center;
     label.textColor=[UIColor whiteColor];
+    label.font=self.config.font;
     label.text=self.text;
     [self.view addSubview:label];
     

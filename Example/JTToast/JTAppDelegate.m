@@ -7,12 +7,15 @@
 //
 
 #import "JTAppDelegate.h"
+#import "JTViewController.h"
 
 @implementation JTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    JTViewController* vc=[JTViewController new];
+    self.window.rootViewController=vc;
     return YES;
 }
 
