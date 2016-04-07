@@ -24,6 +24,12 @@
     return toast;
 }
 
+-(void)show
+{
+    UIWindow* window=[[UIApplication sharedApplication] keyWindow];
+    [self showInView:window];
+}
+
 -(void)showInView:(UIView *)containerView
 {
     CGRect boundingRect=[self.text boundingRectWithSize:CGSizeMake(self.config.widthLimit, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.config.font} context:nil];

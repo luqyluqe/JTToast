@@ -20,7 +20,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor=[UIColor whiteColor];
-    [[JTToast toastWithText:@"hahahahahahahahaha"] showInView:self.view];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [[JTToast toastWithText:@"hahahahahahahahaha"] show];
 }
 
 - (void)didReceiveMemoryWarning

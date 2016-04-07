@@ -7,6 +7,7 @@
 +(JTToast*)toastWithText:(NSString*)text;
 +(JTToast*)toastWithText:(NSString*)text configuration:(JTToastConfiguration*)config;
 
+-(void)show;
 -(void)showInView:(UIView*)containerView;
 -(void)showInView:(UIView*)containerView size:(CGSize)size;
 
