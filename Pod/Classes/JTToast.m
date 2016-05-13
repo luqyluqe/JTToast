@@ -99,8 +99,8 @@
     
     // Fade in and fade out
     self.view.alpha=0;
-    float fadeInDuration=0.04*duration;
-    float fadeOutDuration=0.3*duration;
+    float fadeInDuration=0.15;
+    float fadeOutDuration=1;
     
     CAKeyframeAnimation* animation=[CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
     animation.values=@[@0,@1,@1.04,@1,@0.98,@1];
@@ -112,27 +112,12 @@
     [UIView animateWithDuration:fadeInDuration delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:0 animations:^{
         self.view.alpha=1;
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:fadeOutDuration delay:duration-fadeInDuration-fadeOutDuration options:0 animations:^{
+        [UIView animateWithDuration:fadeOutDuration delay:duration options:0 animations:^{
             self.view.alpha=0;
-        } completion:nil];
+        } completion:^(BOOL finished) {
+            [self.view removeFromSuperview];
+        }];
     }];
-//    [UIView animateWithDuration:fadeInDuration delay:0 options:0 animations:^{
-//        self.view.alpha=1;
-//    } completion:^(BOOL finished) {
-//        [UIView animateWithDuration:fadeOutDuration delay:duration-fadeInDuration-fadeOutDuration options:0 animations:^{
-//            self.view.alpha=0;
-//        } completion:nil];
-//    }];
-//    [UIView animateWithDuration:animationDuration delay:duration-animationDuration options:0 animations:^{
-//        self.view.alpha=0;
-//    } completion:nil];
-    
-    [NSTimer scheduledTimerWithTimeInterval:duration target:self selector:@selector(cancelToast) userInfo:nil repeats:NO];
-}
-
--(void)cancelToast
-{
-    [self.view removeFromSuperview];
 }
 
 @end
