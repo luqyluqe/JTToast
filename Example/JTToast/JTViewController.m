@@ -25,6 +25,12 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    UITapGestureRecognizer* tapRecog=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showToast)];
+    [self.view addGestureRecognizer:tapRecog];
+}
+
+-(void)showToast
+{
     [[JTToast toastWithText:@"hahahahahahahahaha"] show];
 }
 

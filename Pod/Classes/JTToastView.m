@@ -13,13 +13,13 @@
     CGContextRef ctx=UIGraphicsGetCurrentContext();
     switch (self.colorStyle) {
         case JTToastColorStyleLight:
-            CGContextSetRGBFillColor(ctx, 0.5, 0.5, 0.5, 0.8);
+            CGContextSetRGBFillColor(ctx, 0.3, 0.3, 0.3, 0.9);
             break;
         case JTToastColorStyleNormal:
-            CGContextSetRGBFillColor(ctx, 0.3, 0.3, 0.3, 0.8);
+            CGContextSetRGBFillColor(ctx, 0.2, 0.2, 0.2, 0.9);
             break;
         case JTToastColorStyleDark:
-            CGContextSetRGBFillColor(ctx, 0.1, 0.1, 0.1, 0.8);
+            CGContextSetRGBFillColor(ctx, 0.1, 0.1, 0.1, 0.9);
             break;
         default:
             break;

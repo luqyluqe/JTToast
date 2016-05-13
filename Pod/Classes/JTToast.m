@@ -99,15 +99,30 @@
     
     // Fade in and fade out
     self.view.alpha=0;
-    float fadeInDuration=0.1*duration;
+    float fadeInDuration=0.04*duration;
     float fadeOutDuration=0.3*duration;
-    [UIView animateWithDuration:fadeInDuration delay:0 options:0 animations:^{
+    
+    CAKeyframeAnimation* animation=[CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    animation.values=@[@0,@1,@1.04,@1,@0.98,@1];
+    animation.keyTimes=@[@0,@0.2,@0.4,@0.6,@0.8,@1];
+    animation.timingFunctions=@[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
+    animation.duration=fadeInDuration;
+    [self.view.layer addAnimation:animation forKey:nil];
+    
+    [UIView animateWithDuration:fadeInDuration delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:0 animations:^{
         self.view.alpha=1;
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:fadeOutDuration delay:duration-fadeInDuration-fadeOutDuration options:0 animations:^{
             self.view.alpha=0;
         } completion:nil];
     }];
+//    [UIView animateWithDuration:fadeInDuration delay:0 options:0 animations:^{
+//        self.view.alpha=1;
+//    } completion:^(BOOL finished) {
+//        [UIView animateWithDuration:fadeOutDuration delay:duration-fadeInDuration-fadeOutDuration options:0 animations:^{
+//            self.view.alpha=0;
+//        } completion:nil];
+//    }];
 //    [UIView animateWithDuration:animationDuration delay:duration-animationDuration options:0 animations:^{
 //        self.view.alpha=0;
 //    } completion:nil];
